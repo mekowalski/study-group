@@ -20,6 +20,10 @@
      -Nesting: component can be shown inside of another
      -Reusability: make components that can be easily reused throughout app
      -configuration: arrange component when it is created
+  eg: create app for components
+  1. generate new project, let dependencies install
+  2. write some new components
+  3. 
 
 -What is an event handler?
   a. React is mainly used to handle user interaction.
