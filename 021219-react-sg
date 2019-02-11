@@ -90,7 +90,7 @@
       </div>
       );
     }
-    -make new component configurable with React's Props system(hardcoded author, time and content)
+    -make new component configurable
     eg: configure new component
     (make comp available to project)
     CommentDetail Component
@@ -106,6 +106,24 @@
         <div className='ui container comments'>
           <CommentDetail />
         </div>
+      )
+    }
+    -React's Props system(hardcoded author, time and content)(react-props-system)
+    eg: using props
+    1. Parent provides info to Child
+    <CommentDetail author='Malind' />
+    CommentDetail:      Child Component
+    author=:            PROPerty name
+    'Malind':           Value of the PROP
+
+    2. Child consuming info from Parent
+    const CommentDetail = props => {
+      console.log(props)
+      return (
+        //CODE
+        <a href='/' className='author'>
+          {props.author}
+        </a>
       )
     }
 
