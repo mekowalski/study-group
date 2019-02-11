@@ -16,6 +16,10 @@
      -Functional: Good for simple content, without a lot of logic
      -Class based: handles state of the Component(data update/changes)
      -Class: Good for just about everything else, with complex logic, respond to user input, etc
+     3 TENETS
+     -Nesting: component can be shown inside of another
+     -Reusability: make components that can be easily reused throughout app
+     -configuration: arrange component when it is created
 
 -What is an event handler?
   a. React is mainly used to handle user interaction.
@@ -130,14 +134,14 @@ JSX: <div style={{backgroundColor: 'red'}}></div>
 
 -Adding a class to an element uses different syntax
 *class is a reserved JS keyword*
-eg:
+eg: reserved keywords
 HTML: <label class="label">Enter Name: </label>
 JSX: <label className="label">Enter Name: </label>
 
 
 -JSX can reference JS variables
 *take JS variable and print it up in JSX block*
-eg:
+eg: important variable feature
 const App = () => {
   const buttonText = 'Click Me'
 
