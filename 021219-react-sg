@@ -122,11 +122,20 @@
       return (
         //CODE
         <a href='/' className='author'>
-          {props.author}
+          {props.author} //reference with {props.actualPropName}
         </a>
       )
     }
+    3. Props for time and content
+    l. component reuse and wrap component
+    eg: create new comp and export
+    const WrappedCard = () => {
+      return (
+        <div>
 
+        </div>
+      )
+    }
 
 -What is an event handler?
   a. React is mainly used to handle user interaction.
