@@ -2,7 +2,7 @@
   a. Single JS library
 
 -What is its Purpose?
-  a. Purpose is to show content(HTML: divs, psan, h1, headers, forms, etc) to users & handle user interaction
+  a. Purpose is to show content(HTML: divs, span, h1, headers, forms, etc) to users & handle user interaction
 
 -What about React and Redux?
   a. React can work alone BUT it can also work with a variety of other libraries/packages/servers/databases
@@ -17,3 +17,14 @@
   a. Looks like HTML and can be placed in JS code, it determines the content of the React app like normal
      HTML
      -Special dialect of JS
+
+-What is an event handler?
+  a. React is mainly used to handle user interaction.
+     -An event handler is used to detect user interaction and respond to it(updates/re-render)
+     -This is usually created in the component
+
+-Two prominent, separate libraries?
+  a. React is split into 2 separate libraries
+     -REACT: knows what a component is and how to make components work together
+     -Common for multiple components to be created and work together to form usable application
+     -REACTDOM: knows how to take a component and make it show up in the DOM, as HTML
