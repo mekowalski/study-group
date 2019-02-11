@@ -70,6 +70,27 @@
     -purpose of JSX and provide name of component
     -create new file to hold new component, same component name
     -create new component in new file, paste in JSX
+    import React from 'react';
+
+    const CommentDetail = () => {
+      return (
+      <div className='comment'>
+        <a href='/' className='avatar'>
+          <img alt='avatar' />
+        </a>
+
+        <div className='content'>
+          <a href='/' className='author'>
+            Malind
+          </a>
+          <div className='metadata'>
+            <span className='date'>Today at 11:00am</span>
+          </div>
+          <div className='text'>Nicely written article</div>
+        </div>
+      </div>
+      );
+    }
     -make new component configurable with React's Props system
 
 -What is an event handler?
