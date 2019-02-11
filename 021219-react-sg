@@ -128,7 +128,7 @@
     }
     3. Props for time and content
     l. component reuse and wrap component
-    eg: create new comp and export
+    eg: create new comp and export & import
     const WrappedCard = () => {
       return (
         <div className='ui card'>
@@ -142,6 +142,15 @@
         </div>
       )
     }
+    (show in App)
+    const App = () => {
+      return (
+        div here
+          <WrappedCard />
+        div there
+      )
+    }
+    m. custom content(actual CommentDetail comp)
 
 -What is an event handler?
   a. React is mainly used to handle user interaction.
