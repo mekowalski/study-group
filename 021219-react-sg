@@ -5,7 +5,7 @@
   a. Purpose is to show content(HTML: divs, span, headers, forms, etc) to users & handle user interaction
 
 -What about React and Redux?
-  a. React can work alone BUT it can also work with a variety of other libraries/packages/servers/databases
+  a. React can work alone BUT it can also work with variety of other libraries/packages/servers/databases
 
 -What is a React class?
   a. React components are made using either JS functions or classes(part of JS ES2015)
@@ -32,6 +32,13 @@
   a. Looks like HTML and can be placed in JS code, it determines the content of the React app like normal
      HTML
      -Special dialect of JS
+     -Your browser & no user's browser natively understands what JSX is
+     -JSX gets converted to normal looking JS code
+     -BabelJS homepage, JSX written for simplicity
+     -JSX gets turned into a function call
+     -Complicated code will look messy, unclear and become huge to maintain
+     -Allow written function calls in an easy-to-understand format
+
      eg: Local environment - generate new React project
      1. Make sure NodeJS is installed/updated
      -check version: node -v => v11.2.0
@@ -91,7 +98,7 @@ Javascript Module Systems(JSX purpose)
 
 2. create React component
   -create new function component with ES6 =>()
-  const App = () = {
+  const App = () => {
     return <div>Hello learners!</div> (THIS IS JSX!!!)
   }
 
