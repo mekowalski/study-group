@@ -13,11 +13,6 @@
 -What is a React component?
   a. Goal of the component is used to create some amount of HTML, render that HTML & interact with user input
 
--What is JSX?
-  a. Looks like HTML and can be placed in JS code, it determines the content of the React app like normal
-     HTML
-     -Special dialect of JS
-
 -What is an event handler?
   a. React is mainly used to handle user interaction.
      -An event handler is used to detect user interaction and respond to it(updates/re-render)
@@ -28,3 +23,16 @@
      -REACT: knows what a component is and how to make components work together
      -Common for multiple components to be created and work together to form usable application
      -REACTDOM: knows how to take a component and make it show up in the DOM, as HTML
+
+ -What is JSX?
+  a. Looks like HTML and can be placed in JS code, it determines the content of the React app like normal
+     HTML
+     -Special dialect of JS
+     eg: Local environment - generate new React project
+     1. Make sure NodeJS is installed/updated
+     -check version: node -v => v11.2.0
+     -installation: nodejs.org/en/download, pick installer OS, download, terminal & check it was installed
+     -possibly need to restart terminal
+     2. Install create-react-app(tool)
+     3. Generate a project
+     4. Build a project!!(play with JSX)
