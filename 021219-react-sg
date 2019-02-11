@@ -22,8 +22,19 @@
      -configuration: arrange component when it is created
   eg: create app for components
   1. generate new project, let dependencies install
-  2. write some new components
-  3. 
+  2. remove src default files & write some new components
+  3. First take: single component to make all different JSX show
+    a. index.js and boilerplate
+    b. 2nd nature boilerplate
+    const App = () => {
+      return (
+        <div>
+          Welcome to the page!
+        </div>
+      )
+    }
+    c. list of comments
+    d. semantic ui in public/html
 
 -What is an event handler?
   a. React is mainly used to handle user interaction.
@@ -125,8 +136,8 @@ Javascript Module Systems(JSX purpose)
   -render App component
   -div id='root', create-react-app generated app, take component and render it inside div -id='root'
   ReactDOM.render(
-    <App />, (JSX tags)
-    document.querySelector('#root') (reference to DOM element existing in HTML file)
+    <App />, (JSX tags) (instance of App comp)
+    document.querySelector('#root') (reference to DOM element existing in HTML file) (render it into this)
   )
 
 JSX vs html
