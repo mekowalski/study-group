@@ -92,13 +92,22 @@
     }
     -make new component configurable with React's Props system(hardcoded author, time and content)
     eg: configure new component
-    (make comp availble to project)
+    (make comp available to project)
     CommentDetail Component
     export default CommentDetail
 
     (get access to the comp)
     App Component
     import CommentDetail from './CommentDetail'
+
+    (use CommentDetail inside App Component, tell App it should show the CommentDetail comp)
+    const App = () => {
+      return (
+        <div className='ui container comments'>
+          <CommentDetail />
+        </div>
+      )
+    }
 
 
 -What is an event handler?
