@@ -65,3 +65,13 @@
      -npm start: output scroll and new tab will open to localhost
      -npm start(2nd copy): either stop other server or run app on another port
      -on your network instead of localhost
+
+Javascript Module Systems(JSX purpose)
+-remove src default files
+-create index.js/page refresh
+-how to use React to get content on screen
+-place around with JSX
+-steps as guidance to get content to appear with React
+1. import React and ReactDOM libraries
+2. create React component
+3. take React component and show it on screen
