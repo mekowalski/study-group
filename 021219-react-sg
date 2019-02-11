@@ -52,3 +52,11 @@
      (Babel: convert current JS to be supported with browser, consists of tremendous # of packages)
 
      4. Build a project!!(play with JSX)
+     -open editor and cd into correct project DIR
+     -automatically generated with create-react-app
+     -src: put all written source code heres
+     -public: static files ie: images/icons
+     -node_modules: contains all project dependencies
+     -package.json: redocrds project dependencies & configures project
+     -package-lock.json: records exact version of packages installed
+     -README.md: project manual
