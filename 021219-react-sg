@@ -44,4 +44,11 @@
       create-react-app: Name of package wanting to install
 
      3. Generate a project
+     -generate: create-react-app name-of-project-app(may take a few moments)
+     -alternate: npx create-react-app name-of-project-app(newer version)(without running installation)
+     -added 1K+ packages installed onto local machine
+     -In new create-react-app there are a ton of dependencies to help write a React App
+     (BTS: Webpack, Babel, Dev Server, why-create-react-app file)
+     (Babel: convert current JS to be supported with browser, consists of tremendous # of packages)
+
      4. Build a project!!(play with JSX)
