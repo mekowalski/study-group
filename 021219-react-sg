@@ -73,5 +73,16 @@ Javascript Module Systems(JSX purpose)
 -place around with JSX
 -steps as guidance to get content to appear with React
 1. import React and ReactDOM libraries
+  import React from 'react';
+  import ReactDOM from 'react-dom';
+  -import React from 'react'
+  -import:     Get code from other file or dependency
+  -React:      Variable to assign what is being imported
+  -from:       Specify the name of the library or file importing from
+  -'react':    Name of dependency OR path to the file being imported
+
+  -import: References a module system of ES2015 modules, with a set of rules
+  -require: References CommonJS modules with a different set of rules
+  
 2. create React component
 3. take React component and show it on screen
