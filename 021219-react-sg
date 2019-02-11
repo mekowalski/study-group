@@ -70,13 +70,12 @@
     -purpose of JSX and provide name of component
     -create new file to hold new component, same component name
     -create new component in new file, paste in JSX
-    import React from 'react';
-
+    eg: import React and faker
     const CommentDetail = () => {
       return (
       <div className='comment'>
         <a href='/' className='avatar'>
-          <img alt='avatar' />
+          <img alt='avatar' src={faker.image.avatar()} />
         </a>
 
         <div className='content'>
@@ -91,7 +90,16 @@
       </div>
       );
     }
-    -make new component configurable with React's Props system
+    -make new component configurable with React's Props system(hardcoded author, time and content)
+    eg: configure new component
+    (make comp availble to project)
+    CommentDetail Component
+    export default CommentDetail
+
+    (get access to the comp)
+    App Component
+    import CommentDetail from './CommentDetail'
+
 
 -What is an event handler?
   a. React is mainly used to handle user interaction.
