@@ -2,7 +2,7 @@
   a. Single JS library
 
 -What is its Purpose?
-  a. Purpose is to show content(HTML: divs, span, h1, headers, forms, etc) to users & handle user interaction
+  a. Purpose is to show content(HTML: divs, span, headers, forms, etc) to users & handle user interaction
 
 -What about React and Redux?
   a. React can work alone BUT it can also work with a variety of other libraries/packages/servers/databases
@@ -11,7 +11,7 @@
   a. React components are made using either JS functions or classes(part of JS ES2015)
 
 -What is a React component?
-  a. Goal of the component is used to create some amount of HTML, render that HTML & interact with user input
+  a. Goal of the component is to create some amount of HTML, render that HTML & interact with user input
 
 -What is an event handler?
   a. React is mainly used to handle user interaction.
@@ -55,8 +55,13 @@
      -open editor and cd into correct project DIR
      -automatically generated with create-react-app
      -src: put all written source code heres
-     -public: static files ie: images/icons
-     -node_modules: contains all project dependencies
+     -public: static files ie: images/icons/html file
+     -node_modules: contains all project dependencies ie: 1K+ dependencies
      -package.json: redocrds project dependencies & configures project
      -package-lock.json: records exact version of packages installed
      -README.md: project manual
+
+     Running project
+     -npm start: output scroll and new tab will open to localhost
+     -npm start(2nd copy): either stop other server or run app on another port
+     -on your network instead of localhost
