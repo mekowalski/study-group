@@ -64,7 +64,13 @@
     <a href='/' className='avatar'>
       <img alt='avatar' src={faker.image.avatar()} />
     </a>
-
+    j. copy & paste the comment code(turn into giant mess), how to keep up with list
+    k. extract JSX to new components (src/CommentDetail.js)
+    -identity duplicated JSX
+    -purpose of JSX and provide name of component
+    -create new file to hold new component, same component name
+    -create new component in new file, paste in JSX
+    -make new component configurable with React's Props system
 
 -What is an event handler?
   a. React is mainly used to handle user interaction.
