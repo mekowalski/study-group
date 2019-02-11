@@ -102,6 +102,17 @@ Javascript Module Systems(JSX purpose)
     return <div>Hello learners!</div> (THIS IS JSX!!!)
   }
 
+  -multi-line segment of JSX inside ()
+  const App = () => {
+    return (
+      <div>
+        <label className='label' htmlFor='name'>Enter Name: </label>
+        <input id='name' type='text' />
+        <button>Click Me!</button>
+      </div> (THIS IS JSX!!!)
+    )
+  }
+
 3. take React component and show it on screen
   -render App component
   -div id='root', create-react-app generated app, take component and render it inside div -id='root'
