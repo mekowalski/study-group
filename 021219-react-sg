@@ -33,6 +33,15 @@
      -check version: node -v => v11.2.0
      -installation: nodejs.org/en/download, pick installer OS, download, terminal & check it was installed
      -possibly need to restart terminal
+
      2. Install create-react-app(tool)
+     -installation: npm install -g create-react-app(may take a few moments)
+     -BREAKDOWN:
+      npm install -g create-react-app
+      npm:              Runs npm(node package manager)(open source JS package manager)
+      install:          'install' a package onto my computer
+      -g:               Installs this package globally to run it from the terminal
+      create-react-app: Name of package wanting to install
+
      3. Generate a project
      4. Build a project!!(play with JSX)
