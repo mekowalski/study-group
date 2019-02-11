@@ -97,12 +97,12 @@ Javascript Module Systems(JSX purpose)
   const React = require('react')
 
 2. create React component
-  -create new function component with ES6 =>()
+  a. -create new function component with ES6 =>()
   const App = () => {
     return <div>Hello learners!</div> (THIS IS JSX!!!)
   }
 
-  -multi-line segment of JSX inside ()
+  b. -multi-line segment of JSX inside ()
   const App = () => {
     return (
       <div>
@@ -120,3 +120,30 @@ Javascript Module Systems(JSX purpose)
     <App />, (JSX tags)
     document.querySelector('#root') (reference to DOM element existing in HTML file)
   )
+
+JSX vs html
+-Adding custom styling to an element uses different syntax
+eg: inline styling
+HTML: <div style='background-color: red;'></div>
+JSX: <div style={{backgroundColor: 'red'}}></div>
+
+
+-Adding a class to an element uses different syntax
+*class is a reserved JS keyword*
+eg:
+HTML: <label class="label">Enter Name: </label>
+JSX: <label className="label">Enter Name: </label>
+
+
+-JSX can reference JS variables
+*take JS variable and print it up in JSX block*
+eg:
+const App = () => {
+  const buttonText = 'Click Me'
+
+  return (
+    <button style={{ backgroundColor: 'green', color: 'white' }}>
+      {buttonText}
+    </button>
+  )
+}
