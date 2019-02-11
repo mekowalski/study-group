@@ -12,6 +12,10 @@
 
 -What is a React component?
   a. Goal of the component is to create some amount of HTML, render that HTML & interact with user input
+     -Function based: produces HTML to show user(via JSX) & handles input from user(via event handlers)
+     -Functional: Good for simple content, without a lot of logic
+     -Class based: handles state of the Component(data update/changes)
+     -Class: Good for just about everything else, with complex logic, respond to user input, etc
 
 -What is an event handler?
   a. React is mainly used to handle user interaction.
@@ -57,7 +61,7 @@
      -src: put all written source code heres
      -public: static files ie: images/icons/html file
      -node_modules: contains all project dependencies ie: 1K+ dependencies
-     -package.json: redocrds project dependencies & configures project
+     -package.json: records project dependencies & configures project
      -package-lock.json: records exact version of packages installed
      -README.md: project manual
 
@@ -78,11 +82,23 @@ Javascript Module Systems(JSX purpose)
   -import React from 'react'
   -import:     Get code from other file or dependency
   -React:      Variable to assign what is being imported
-  -from:       Specify the name of the library or file importing from
+  -from:       Specify the name of the library or file importing from(node_modules DIR)
   -'react':    Name of dependency OR path to the file being imported
 
   -import: References a module system of ES2015 modules, with a set of rules
   -require: References CommonJS modules with a different set of rules
-  
+  const React = require('react')
+
 2. create React component
+  -create new function component with ES6 =>()
+  const App = () = {
+    return <div>Hello learners!</div> (THIS IS JSX!!!)
+  }
+
 3. take React component and show it on screen
+  -render App component
+  -div id='root', create-react-app generated app, take component and render it inside div -id='root'
+  ReactDOM.render(
+    <App />, (JSX tags)
+    document.querySelector('#root') (reference to DOM element existing in HTML file)
+  )
