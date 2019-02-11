@@ -57,6 +57,14 @@
         </div>
       )
     }
+    f. images in JSX, use Faker JS library, initial development for fake data
+    g. install Faker: npm install --save faker(save into local project)
+    h. import Faker at top of file(import faker from 'faker';)
+    i. src='' not hardcoded img, use interpolation, reference faker library, auto-regenerates with refresh
+    <a href='/' className='avatar'>
+      <img alt='avatar' src={faker.image.avatar()} />
+    </a>
+
 
 -What is an event handler?
   a. React is mainly used to handle user interaction.
