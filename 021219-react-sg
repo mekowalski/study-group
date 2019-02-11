@@ -34,7 +34,29 @@
       )
     }
     c. list of comments
-    d. semantic ui in public/html
+    d. semantic ui in public/html, views/comments, semantic ui cdn, stylesheet
+    e. naive component approach index.js file
+    const App = () => {
+      return (
+        <div className='ui container comments'>
+          <div className='comment'>
+            <a href='/' className='avatar'>
+              <img alt='avatar' />
+            </a>
+
+            <div className='content'>
+              <a href='/' className='author'>
+                Malind
+              </a>
+              <div className='metadata'>
+                <span className='date'>Today at 11:00am</span>
+              </div>
+              <div className='text'>Nicely written article</div>
+            </div>
+          </div>
+        </div>
+      )
+    }
 
 -What is an event handler?
   a. React is mainly used to handle user interaction.
