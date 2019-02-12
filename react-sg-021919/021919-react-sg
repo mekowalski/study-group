@@ -1,0 +1,101 @@
+-What is a React class?
+  a. React components are made using either JS functions or classes(part of JS ES2015)
+
+-What is a React component?
+  a. Goal of the component is to create some amount of HTML, render that HTML & interact with user input
+     -Function based: produces HTML to show user(via JSX) & handles input from user(via event handlers)
+     -Functional: Good for simple content, without a lot of logic
+     -Class based: handles state of the Component(data update/changes)
+     -Class: Good for just about everything else, with complex logic, respond to user input, etc
+     3 TENETS
+     -Nesting: component can be shown inside of another
+     -Reusability: make components that can be easily reused throughout app
+     -configuration: arrange component when it is created
+  eg: create app for components
+  1. generate new project, let dependencies install
+  2. remove src default files & write some new components
+  3. First take: single component to make all different JSX show
+    a. index.js and boilerplate
+    b. 2nd nature boilerplate
+    const App = () => {
+      return (
+        <div>
+          Welcome to the page!
+        </div>
+      )
+    }
+    c. list of comments
+    d. semantic ui in public/html, views/comments, semantic ui cdn, stylesheet
+    e. naive component approach index.js file
+    const App = () => {
+      return (
+        <div className='ui container comments'>
+          <div className='comment'>
+            <a href='/' className='avatar'>
+              <img alt='avatar' />
+            </a>
+
+            <div className='content'>
+              <a href='/' className='author'>
+                Malind
+              </a>
+              <div className='metadata'>
+                <span className='date'>Today at 11:00am</span>
+              </div>
+              <div className='text'>Nicely written article</div>
+            </div>
+          </div>
+        </div>
+      )
+    }
+    f. images in JSX, use Faker JS library, initial development for fake data
+    g. install Faker: npm install --save faker(save into local project)
+    h. import Faker at top of file(import faker from 'faker';)
+    i. src='' not hardcoded img, use interpolation, reference faker library, auto-regenerates with refresh
+    <a href='/' className='avatar'>
+      <img alt='avatar' src={faker.image.avatar()} />
+    </a>
+    j. copy & paste the comment code(turn into giant mess), how to keep up with list
+    k. extract JSX to new components (src/CommentDetail.js)
+    -identity duplicated JSX
+    -purpose of JSX and provide name of component
+    -create new file to hold new component, same component name
+    -create new component in new file, paste in JSX
+    eg: import React and faker
+    const CommentDetail = () => {
+      return (
+      <div className='comment'>
+        <a href='/' className='avatar'>
+          <img alt='avatar' src={faker.image.avatar()} />
+        </a>
+
+        <div className='content'>
+          <a href='/' className='author'>
+            Malind
+          </a>
+          <div className='metadata'>
+            <span className='date'>Today at 11:00am</span>
+          </div>
+          <div className='text'>Nicely written article</div>
+        </div>
+      </div>
+      );
+    }
+    -make new component configurable
+    eg: configure new component
+    (make comp available to project)
+    CommentDetail Component
+    export default CommentDetail
+
+    (get access to the comp)
+    App Component
+    import CommentDetail from './CommentDetail'
+
+    (use CommentDetail inside App Component, tell App it should show the CommentDetail comp)
+    const App = () => {
+      return (
+        <div className='ui container comments'>
+          <CommentDetail />
+        </div>
+      )
+    }
