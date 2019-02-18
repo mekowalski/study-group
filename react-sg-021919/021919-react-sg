@@ -14,7 +14,9 @@
      -Reusability: make components that can be easily reused throughout app
       -What is a common web site you go on often?
       -Gmail: has similar tabs with different names, inbox list with sender/subject line/email preview etc
-     -configuration: arrange component when it is created
+     -Configuration: arrange component when it is created
+      -Tabs may need to do different tasks(primary, social, promotion)
+      -Ability to customize components when they're created
   eg: create app for components
   1. generate new project, let dependencies install
   2. remove src default files & write some new components
