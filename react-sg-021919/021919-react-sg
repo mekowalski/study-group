@@ -7,7 +7,7 @@
      -Functional: Good for simple content, without a lot of logic
      -Class based: handles state of the Component(data update/changes)
      -Class: Good for just about everything else, with complex logic, respond to user input, etc
-     3 TENETS
+     3 PRINCIPLES/PRACTICES
      -Nesting: component can be shown inside of another
      -Reusability: make components that can be easily reused throughout app
      -configuration: arrange component when it is created
@@ -28,7 +28,9 @@
     d. semantic ui in public/html, views/comments, semantic ui cdn, stylesheet
     e. naive component approach index.js file
     const App = () => {
-      return (
+      return ( //as soon as JS sees the return message, it thinks, okay i'll just return, but there isn't
+      //anything right after the return keyword, therefore an error of 'undefined will show'
+      //therefore have opening tag on same line as return keyword or use ()
         <div className='ui container comments'>
           <div className='comment'>
             <a href='/' className='avatar'>
