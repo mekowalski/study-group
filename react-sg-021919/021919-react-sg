@@ -27,7 +27,7 @@ APPLICATION OVERVIEW
   1. generate new project, let dependencies install
   2. remove src default files & write some new components
   3. First take: single component to make all different JSX show
-    a. index.js and boilerplate
+    a. index.js and boilerplate(3 guidelines to display content in browser)
     b. 2nd nature boilerplate
     const App = () => {
       return (
@@ -70,11 +70,11 @@ APPLICATION OVERVIEW
       <img alt='avatar' src={faker.image.avatar()} />
     </a>
     j. copy & paste the comment code(turn into giant mess), how to keep up with list
-    k. extract JSX to new components (src/CommentDetail.js)
-    -identity duplicated JSX
-    -purpose of JSX and provide name of component
-    -create new file to hold new component, same component name
-    -create new component in new file, paste in JSX
+  4. Second take: extract JSX to new components (src/CommentDetail.js)
+    a. identity duplicated JSX
+    b. purpose of JSX and provide name of component
+    c. create new file to hold new component, same component name
+    d. create new component in new file, paste in JSX
     eg: import React and faker
     const CommentDetail = () => {
       return (
@@ -95,7 +95,7 @@ APPLICATION OVERVIEW
       </div>
       );
     }
-    -make new component configurable
+    e. make new component configurable
     eg: configure new component
     (make comp available to project)
     CommentDetail Component
