@@ -29,7 +29,7 @@
     e. naive component approach index.js file
     const App = () => {
       return ( //as soon as JS sees the return message, it thinks, okay i'll just return, but there isn't
-      //anything right after the return keyword, therefore an error of 'undefined will show'
+      //anything right after the return keyword, therefore an error of 'undefined' will show
       //therefore have opening tag on same line as return keyword or use ()
         <div className='ui container comments'>
           <div className='comment'>
@@ -99,5 +99,71 @@
         <div className='ui container comments'>
           <CommentDetail />
         </div>
+      )
+    }
+
+
+-What is a React PROPs?
+    -React's Props system(hardcoded author, time and content)(react-props-system)
+    eg: using props
+    1. Parent provides info to Child
+    <CommentDetail author='Malind' />
+    CommentDetail:      Child Component
+    author=:            PROPerty name
+    'Malind':           Value of the PROP
+
+    2. Child consuming info from Parent
+    const CommentDetail = props => {
+      console.log(props)
+      return (
+        //CODE
+        <a href='/' className='author'>
+          {props.author} //reference with {props.actualPropName}
+        </a>
+      )
+    }
+    3. Props for time and content
+
+    l. component reuse and wrap component
+    eg: create new comp and export & import
+    const WrappedCard = () => {
+      return (
+        <div className='ui card'>
+          <div className='content'></div>
+          <div className='extra content'>
+            <div className='ui two buttons'>
+              <div className='ui basic green button'>Approve</div>
+              <div className='ui basic red button'>Decline</div>
+            </div>
+          </div>
+        </div>
+      )
+    }
+    (show in App)
+    const App = () => {
+      return (
+        div here
+          <WrappedCard />
+        div there
+      )
+    }
+
+    m. custom content(actual CommentDetail comp)
+    eg: show CommentDetail in WrappedCard
+    const App = () => {
+      return (
+        div here
+          <WrappedCard>
+            <CommentDetail />
+          </WrappedCard>
+        div there
+      )
+    }
+    (how to actually get the comp to display)
+    const WrappedCard = props => {
+      return (
+        this div
+          <div className='content'>{props.children}</div>
+        that div
       )
     }
