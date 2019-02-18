@@ -17,6 +17,12 @@
      -Configuration: arrange component when it is created
       -Tabs may need to do different tasks(primary, social, promotion)
       -Ability to customize components when they're created
+
+APPLICATION OVERVIEW
+-React component displaying a list of comments(blog, songs, article, etc)
+-maybe have an image, a username(bold), time/date, and actual comment text
+-comments will look VERY similar/identical but all have different photo, text and content
+
   eg: create app for components
   1. generate new project, let dependencies install
   2. remove src default files & write some new components
