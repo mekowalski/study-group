@@ -120,6 +120,10 @@ APPLICATION OVERVIEW
     (get access to the comp)
     App Component
     import CommentDetail from './CommentDetail'
+    //relative path reference to file to import
+    //file to import is in the same DIR
+    // ./ - look in the same folder and find the file named CommentDetail
+    //webpack that imports/connects files, automatically attempts to find files ending in .js
 
     (use CommentDetail inside App Component, tell App it should show the CommentDetail comp)
     const App = () => {
