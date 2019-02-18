@@ -76,30 +76,32 @@ APPLICATION OVERVIEW
     -tends to be challenging to make any update/modification to the App component(not good, painful)
 
   4. Second take: extract JSX to new components (src/CommentDetail.js)
+  -Series of steps, every time to create reusable component
     a. identity duplicated JSX
     b. purpose of JSX and provide name of component
     c. create new file to hold new component, same component name
     d. create new component in new file, paste in JSX
-    eg: import React and faker
+    eg: import React and faker, new function that serves as CommentDetail component
     const CommentDetail = () => {
       return (
-      <div className='comment'>
-        <a href='/' className='avatar'>
-          <img alt='avatar' src={faker.image.avatar()} />
-        </a>
-
-        <div className='content'>
-          <a href='/' className='author'>
-            Malind
+        <div className='comment'>
+          <a href='/' className='avatar'>
+            <img alt='avatar' src={faker.image.avatar()} />
           </a>
-          <div className='metadata'>
-            <span className='date'>Today at 11:00am</span>
+
+          <div className='content'>
+            <a href='/' className='author'>
+              Malind //hard-coded author
+            </a>
+            <div className='metadata'>
+              <span className='date'>Today at 11:00am</span> //hard-coded time
+            </div>
+            <div className='text'>Nicely written article</div> //hard-coded content
           </div>
-          <div className='text'>Nicely written article</div>
         </div>
-      </div>
       );
     }
+
     e. make new component configurable
     eg: configure new component
     (make comp available to project)
@@ -119,7 +121,8 @@ APPLICATION OVERVIEW
       )
     }
 
-
+(Step 4, Second take: extract JSX to new Component)
+(Create reusable, configurable component(config through props))
 (Maybe talk about props in the next react sg?)
 -What is a React PROPs?
     -React's Props system(hardcoded author, time and content)(react-props-system)
