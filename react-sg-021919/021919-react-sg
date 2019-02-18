@@ -101,6 +101,10 @@ APPLICATION OVERVIEW
         </div>
       );
     }
+    //not every comment shown inside application will have the exact same author/time/content
+    //anytime the CommentDetail component is going to be displayed, it'll probably need to be customizable
+    //that's what the Props system is about: allows configuration/arrangement of component behavior or
+    //what the content it shows
 
     e. make new component configurable
     eg: configure new component
