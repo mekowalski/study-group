@@ -9,7 +9,11 @@
      -Class: Good for just about everything else, with complex logic, respond to user input, etc
      3 PRINCIPLES/PRACTICES
      -Nesting: component can be shown inside of another
+      -Real React app uses many different components
+      -They can be nested or placed into one another
      -Reusability: make components that can be easily reused throughout app
+      -What is a common web site you go on often?
+      -Gmail: has similar tabs with different names, inbox list with sender/subject line/email preview etc
      -configuration: arrange component when it is created
   eg: create app for components
   1. generate new project, let dependencies install
@@ -103,6 +107,7 @@
     }
 
 
+(Maybe talk about props in the next react sg?)
 -What is a React PROPs?
     -React's Props system(hardcoded author, time and content)(react-props-system)
     eg: using props
