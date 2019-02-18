@@ -107,6 +107,11 @@ APPLICATION OVERVIEW
     //what the content it shows
 
     e. make new component configurable
+    -Make sure CommentDetail is available in App comp
+    -There is no connection of App in index.js and CommentDetail in CommentDetail.js
+    -1. Need to export CommentDetail to make it available to rest of the world
+    -2. Also need to import CommentDetail within calling file to access CommentDetail comp
+    -3. Render it within App as Nesting Component Technique
     eg: configure new component
     (make comp available to project)
     CommentDetail Component
