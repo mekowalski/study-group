@@ -129,10 +129,14 @@ APPLICATION OVERVIEW
     const App = () => {
       return (
         <div className='ui container comments'>
-          <CommentDetail />
+          <CommentDetail /> //treated as JSX tag
         </div>
       )
     }
+    //{} refer to JS variables/functions
+    //components are 1 exception to this rule
+    //if component needs to be shown inside another, treat it as JSX tag instead
+    
 
 (Step 4, Second take: extract JSX to new Component)
 (Create reusable, configurable component(config through props))
