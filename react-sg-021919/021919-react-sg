@@ -63,7 +63,7 @@ APPLICATION OVERVIEW
     //as soon as JS sees the return message, it thinks, okay i'll just return, but there isn't
     //anything right after the return keyword, therefore an error of 'undefined' will show
     //therefore have opening tag on same line as return keyword or use ()
-    
+
     f. images in JSX, use Faker JS library, initial development for fake data
     g. install Faker: npm install --save faker(save into local project)
     h. import Faker at top of file(import faker from 'faker';)(use of library)
@@ -72,6 +72,9 @@ APPLICATION OVERVIEW
       <img alt='avatar' src={faker.image.avatar()} />
     </a>
     j. copy & paste the comment code(turn into giant mess), how to keep up with list
+    -beast to navigate, go find 2nd comment and edit the context, difficult to look at
+    -tends to be challenging to make any update/modification to the App component(not good, painful)
+
   4. Second take: extract JSX to new components (src/CommentDetail.js)
     a. identity duplicated JSX
     b. purpose of JSX and provide name of component
