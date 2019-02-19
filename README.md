@@ -6,3 +6,7 @@
 ### Date: 021919
 - Topics: React Components
 - (Functional/Class-based, 3 Tenets: Reusability/Nesting/Configuration, Import/Export)
+
+### Date: 022619
+- Topics: React Props and State(?)
+- 
