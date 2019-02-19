@@ -1,0 +1,67 @@
+(Step 4, Second take: extract JSX to new Component)
+(Create reusable, configurable component(config through props))
+(Maybe talk about props in the next react sg?)
+-What is a React PROPs?
+    -React's Props system(hardcoded author, time and content)(react-props-system)
+    eg: using props
+    1. Parent provides info to Child
+    <CommentDetail author='Malind' />
+    CommentDetail:      Child Component
+    author=:            PROPerty name
+    'Malind':           Value of the PROP
+
+    2. Child consuming info from Parent
+    const CommentDetail = props => {
+      console.log(props)
+      return (
+        //CODE
+        <a href='/' className='author'>
+          {props.author} //reference with {props.actualPropName}
+        </a>
+      )
+    }
+    3. Props for time and content
+
+    l. component reuse and wrap component
+    eg: create new comp and export & import
+    const WrappedCard = () => {
+      return (
+        <div className='ui card'>
+          <div className='content'></div>
+          <div className='extra content'>
+            <div className='ui two buttons'>
+              <div className='ui basic green button'>Approve</div>
+              <div className='ui basic red button'>Decline</div>
+            </div>
+          </div>
+        </div>
+      )
+    }
+    (show in App)
+    const App = () => {
+      return (
+        div here
+          <WrappedCard />
+        div there
+      )
+    }
+
+    m. custom content(actual CommentDetail comp)
+    eg: show CommentDetail in WrappedCard
+    const App = () => {
+      return (
+        div here
+          <WrappedCard>
+            <CommentDetail />
+          </WrappedCard>
+        div there
+      )
+    }
+    (how to actually get the comp to display)
+    const WrappedCard = props => {
+      return (
+        this div
+          <div className='content'>{props.children}</div>
+        that div
+      )
+    }
