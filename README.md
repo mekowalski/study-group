@@ -9,4 +9,4 @@
 
 ### Date: 022619
 - Topics: React Props and State(?)
-- 
+- (Parent/Child(ren) Components & Props, Passing/Consuming Props, Wrapping/`'Nesting'` Components)
