@@ -5,6 +5,11 @@
 -The majority of the classNames I'm using are all from Semantic UI, I've just used this a bit and am
  familiar with the specific tag naming of values
 
+-Currently the CommentDetail Component has hard-coded attributes of: Author, Date, Content
+-Not every comment will have the exact identical author, date and content
+-When CommentDetail is shown on the screen, it probably should be customizable
+-Props: is all about customization, allows configure how Component behaves or what the content shows
+
 (Step 4, Second take: extract JSX to new Component)
 (Create reusable, configurable component(config through props))
 (Maybe talk about props in the next react sg?)
