@@ -172,3 +172,8 @@ const WrappedCard = props => {
     that div
   )
 }
+*WrappedCard will receive a first argument as (props)
+*Now CommentDetail component exists as a props object for WrappeCard
+*console.log(props), DevTools, props object with single prop of children
+*console.log(props.children), DevTools, will show just the React component
+*Can now show that as the body of the WrappedCard, 'content' {props.children}
