@@ -65,6 +65,13 @@ const CommentDetail = (props) => {
     </a>
   )
 }
+*CommentDetail component gets to the Prop
+*Props is provided inside of an object as the first argument to the component function
+*const CommentDetail = (props) => {}
+*console.log(props), DevTools, 3 console.logs of 3 Objects, instances of CommentDetail component
+*To consume the Prop, find of the Prop location in component, {} to reference JS variable, {props.author}
+*Whenever CommentDetail is shown on screen, it'll look at the (props) object, see the author Property
+*Take that author name and stick it into the tag
 
 
 4. Props for time and content
