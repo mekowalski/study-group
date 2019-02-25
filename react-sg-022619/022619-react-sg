@@ -17,11 +17,21 @@
 (Maybe talk about props in the next react sg?)
 -What is a React PROPs?
 -React's Props system(hardcoded author, time and content)(react-props-system)
+a. System for passing data from a Parent component to a Child component, goal is to customize/configure a
+   Child component
+   A Child cannot pass data to the Parents through the Props system directly
+   Props is use mainly for passing from Parent to Child
+
+-Two stages for Props system
+  1. Parent provides data/info to Child
+  2. Child consumes, makes use of that data/info
+
 
 eg: using props
 1. Parent provides info to Child within Parent Component
 -First instance of Component Nesting
 -Every CommentDetail has the same Author, Date and Content
+Parent: App component, Child: CommentDetail component
 const App = () => {
   return (
     <div className='ui container comments'>
@@ -39,7 +49,7 @@ author=:            PROPerty name
 
 
 3. Child consuming info from Parent
-const CommentDetail = props => {
+const CommentDetail = (props) => {
   console.log(props)
   return (
     //CODE
