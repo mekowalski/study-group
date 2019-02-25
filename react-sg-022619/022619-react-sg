@@ -146,16 +146,22 @@ const App = () => {
 
 
 c. CUSTOM CONTENT(ACTUAL CommentDetail COMP)
+-Show CommentDetail comp
+-But don't always want WrappedCard to always show CommentDetail
+-Want to make WrappedCard reusable with other text
+-Feature in Props system, another way to communicate info to Child component
 eg: show CommentDetail in WrappedCard
 const App = () => {
   return (
     div here
       <WrappedCard>
-        <CommentDetail />
-      </WrappedCard>
+        <CommentDetail /> //communicate the comp down to WrappedCard and show the CommentDetail
+      </WrappedCard> //closing tag
     div there
   )
 }
+*CommentDetail comp is now passed as a Prop down to WrappedCard component
+*CommentDetail is providing configuration to WrappedCard component
 
 
 d. HOW TO ACTUALLY GET THE COMP TO DISPLAY
