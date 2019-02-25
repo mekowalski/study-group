@@ -1,6 +1,7 @@
 -Last SG, a new React app was generated with the index.js file
 -The index.js file held the App component which had repetitive hard-coded JSX
 -Also created a separate component that was extracted from the repetitive JSX in the initial App component
+-Rendered/Imported CommentDetail component within App component with export/import statements
 -Installed and made use of Faker JS library and Semantic UI(open source styling framework)
 -The majority of the classNames I'm using are all from Semantic UI, I've just used this a bit and am
  familiar with the specific tag naming of values
@@ -18,7 +19,9 @@
 -React's Props system(hardcoded author, time and content)(react-props-system)
 
 eg: using props
-1. Parent provides info to Child with in Parent Component
+1. Parent provides info to Child within Parent Component
+-First instance of Component Nesting
+-Every CommentDetail has the same Author, Date and Content
 const App = () => {
   return (
     <div className='ui container comments'>
