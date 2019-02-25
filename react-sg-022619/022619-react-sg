@@ -177,3 +177,12 @@ const WrappedCard = props => {
 *console.log(props), DevTools, props object with single prop of children
 *console.log(props.children), DevTools, will show just the React component
 *Can now show that as the body of the WrappedCard, 'content' {props.children}
+
+*Can now reuse the WrappedCard for other purposes that have similar functions
+*Can also show multiple elements(div, h4, span, etc )
+<WrappedCard>
+  <div>
+    <h3>WARNING</h3>
+    Are you sure you want to do this?
+  </div>
+</WrappedCard>
