@@ -1,7 +1,9 @@
 -Last SG, a new React app was generated with the index.js file
 -The index.js file held the App component which had repetitive hard-coded JSX
 -Also created a separate component that was extracted from the repetitive JSX in the initial App component
--Installed and made use of Faker JS library and Semantic UI
+-Installed and made use of Faker JS library and Semantic UI(open source styling framework)
+-The majority of the classNames I'm using are all from Semantic UI, I've just used this a bit and am
+ familiar with the specific tag naming of values
 
 (Step 4, Second take: extract JSX to new Component)
 (Create reusable, configurable component(config through props))
