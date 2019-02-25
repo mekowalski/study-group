@@ -1,3 +1,8 @@
+-Last SG, a new React app was generated with the index.js file
+-The index.js file held the App component which had repetitive hard-coded JSX
+-Also created a separate component that was extracted from the repetitive JSX in the initial App component
+-Installed and made use of Faker JS library and Semantic UI
+
 (Step 4, Second take: extract JSX to new Component)
 (Create reusable, configurable component(config through props))
 (Maybe talk about props in the next react sg?)
