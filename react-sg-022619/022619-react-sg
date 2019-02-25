@@ -112,6 +112,10 @@ a. component reuse and wrap component
 -Most comments posted will have a reviewer who can accept or reject a comment
 -Option to stick custom content in the component
 
+-New file and Component for WrappedCard.js
+-Import, functional component and export
+-Borrow styling from Semantic UI Views/Card
+-Will sub in custom conten in a moment
 eg: create new comp and export & import
 const WrappedCard = () => {
   return (
@@ -126,6 +130,8 @@ const WrappedCard = () => {
     </div>
   )
 }
+
+export default WrappedCard
 
 b. show in App
 const App = () => {
