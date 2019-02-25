@@ -107,7 +107,7 @@ Avatar
 *Reference {props.avatar} variable to src=
 
 
-a. component reuse and wrap component
+a. COMPONENT REUSE AND WRAP COMPONENT
 -Create a brand new component called WrappedCard with approve/decline
 -Most comments posted will have a reviewer who can accept or reject a comment
 -Option to stick custom content in the component
@@ -120,7 +120,7 @@ eg: create new comp and export & import
 const WrappedCard = () => {
   return (
     <div className='ui card'>
-      <div className='content'></div>
+      <div className='content'></div> //where the ultimate content will go(CommentDetail/Custom Message)
       <div className='extra content'>
         <div className='ui two buttons'>
           <div className='ui basic green button'>Approve</div>
@@ -133,7 +133,9 @@ const WrappedCard = () => {
 
 export default WrappedCard
 
-b. show in App
+
+b. SHOW IN APP
+import WrappedCard from './WrappedCard'
 const App = () => {
   return (
     div here
@@ -142,7 +144,8 @@ const App = () => {
   )
 }
 
-c. custom content(actual CommentDetail comp)
+
+c. CUSTOM CONTENT(ACTUAL CommentDetail COMP)
 eg: show CommentDetail in WrappedCard
 const App = () => {
   return (
@@ -154,7 +157,8 @@ const App = () => {
   )
 }
 
-d. how to actually get the comp to display
+
+d. HOW TO ACTUALLY GET THE COMP TO DISPLAY
 const WrappedCard = props => {
   return (
     this div
