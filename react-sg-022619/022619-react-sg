@@ -36,7 +36,7 @@ const App = () => {
   return (
     <div className='ui container comments'>
       <CommentDetail  author='Malind'/>
-      <CommentDetail  author='Malind'/>
+      <CommentDetail  author='Ryan'/>
       <CommentDetail  author='Kristopher'/>
     </div>
   )
@@ -74,7 +74,18 @@ const CommentDetail = (props) => {
 *Take that author name and stick it into the tag
 
 
-4. Props for time and content
+4. Props for date, content and avatar
+<CommentDetail author='Malind' date='Today at 4:45pm' content='This was a good read'/>
+<CommentDetail author='Ryan' date='Today at 9:36am' content='nicely written article'/>
+<CommentDetail author='Kristopher' date='Yesterday at 11:03pm' content='tl, dr'/>
+*Props object (props) will now have 2 key-value pairs of author, date and content
+
+Date
+{props.time}
+
+Content
+{props.content}
+
 
 a. component reuse and wrap component
 eg: create new comp and export & import
