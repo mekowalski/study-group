@@ -12,14 +12,17 @@
 -React's Props system(hardcoded author, time and content)(react-props-system)
 
 eg: using props
-1. Parent provides info to Child
+1. Parent provides info to Child with in Parent Component
+
+
+2. Parent provides info to Child
 <CommentDetail author='Malind' />
 CommentDetail:      Child Component
 author=:            PROPerty name
 'Malind':           Value of the PROP
 
 
-2. Child consuming info from Parent
+3. Child consuming info from Parent
 const CommentDetail = props => {
   console.log(props)
   return (
@@ -31,7 +34,7 @@ const CommentDetail = props => {
 }
 
 
-3. Props for time and content
+4. Props for time and content
 
 a. component reuse and wrap component
 eg: create new comp and export & import
