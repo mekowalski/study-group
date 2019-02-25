@@ -75,9 +75,21 @@ const CommentDetail = (props) => {
 
 
 4. Props for date, content and avatar
-<CommentDetail author='Malind' date='Today at 4:45pm' content='This was a good read' avatar={faker.image.avatar()}/>
-<CommentDetail author='Ryan' date='Today at 9:36am' content='nicely written article' avatar={faker.image.avatar()}/>
-<CommentDetail author='Kristopher' date='Yesterday at 11:03pm' content='tl, dr' avatar={faker.image.avatar()}/>
+<CommentDetail
+  author='Malind'
+  date='Today at 4:45pm'
+  content='This was a good read'
+  avatar={faker.image.avatar()}/>
+<CommentDetail
+  author='Ryan'
+  date='Today at 9:36am'
+  content='nicely written article'
+  avatar={faker.image.avatar()}/>
+<CommentDetail
+  author='Kristopher'
+  date='Yesterday at 11:03pm'
+  content='tl, dr'
+  avatar={faker.image.avatar()}/>
 *Props object (props) will now have 2 key-value pairs of author, date, content and avatar
 
 Date
