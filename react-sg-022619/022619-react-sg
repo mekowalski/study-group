@@ -35,7 +35,9 @@ Parent: App component, Child: CommentDetail component
 const App = () => {
   return (
     <div className='ui container comments'>
-      <CommentDetail />
+      <CommentDetail  author='Malind'/>
+      <CommentDetail  author='Malind'/>
+      <CommentDetail  author='Kristopher'/>
     </div>
   )
 }
@@ -46,6 +48,11 @@ const App = () => {
 CommentDetail:      Child Component
 author=:            PROPerty name
 'Malind':           Value of the PROP
+*Props value is a hard-coded string currently
+*It could reference a JS variable with {} such as {author}
+*Providing same Props name but each has a different value
+*When a Prop is provided to a component, it's always going to a unique version of that component
+*The Prop will not be shared with the other instances of the component
 
 
 3. Child consuming info from Parent
