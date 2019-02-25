@@ -75,16 +75,24 @@ const CommentDetail = (props) => {
 
 
 4. Props for date, content and avatar
-<CommentDetail author='Malind' date='Today at 4:45pm' content='This was a good read'/>
-<CommentDetail author='Ryan' date='Today at 9:36am' content='nicely written article'/>
-<CommentDetail author='Kristopher' date='Yesterday at 11:03pm' content='tl, dr'/>
-*Props object (props) will now have 2 key-value pairs of author, date and content
+<CommentDetail author='Malind' date='Today at 4:45pm' content='This was a good read' avatar={faker.image.avatar()}/>
+<CommentDetail author='Ryan' date='Today at 9:36am' content='nicely written article' avatar={faker.image.avatar()}/>
+<CommentDetail author='Kristopher' date='Yesterday at 11:03pm' content='tl, dr' avatar={faker.image.avatar()}/>
+*Props object (props) will now have 2 key-value pairs of author, date, content and avatar
 
 Date
 {props.time}
 
 Content
 {props.content}
+
+Avatar
+{props.avatar}
+*Customize the attribute on JSX element using a prop
+*No hard-coded string provided for the avatar
+*It will be a reference to a JS variable
+*avatar={faker.image.avatar()} will generate a new link to an image and assign it to the avatar prop
+*Reference {props.avatar} variable to src=
 
 
 a. component reuse and wrap component
