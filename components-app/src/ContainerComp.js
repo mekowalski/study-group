@@ -29,4 +29,4 @@ const mapStateToProps = (state) = {
   return { authors: state.authors }
 }
 
-exprt default connect(mapStateToProps)(ContainerComp)
+export default connect(mapStateToProps)(ContainerComp)
